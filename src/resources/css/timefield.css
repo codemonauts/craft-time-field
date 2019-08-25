@@ -1,0 +1,37 @@
+.timefield {
+    width: 8.5em;
+    display: inline-block;
+    position: relative;
+    background: #fff;
+}
+.timefield .text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background: transparent;
+}
+.timefield .text:before {
+    top: calc(50% - 5px);
+    font-size: 11px;
+    color: transparent;
+    content: "time";
+}
+body.ltr .timefield .text:before {
+    left: 7px;
+}
+body.rtl .timefield .text:before {
+    right: 7px;
+}
+.timefield div[data-icon] {
+    display: block;
+    position: absolute;
+    top: calc(50% - 10px);
+    z-index: 0;
+    color: #b9bfc6;
+}
+body.ltr .timefield div[data-icon] {
+    left: 8px;
+}
+body.rtl .timefield div[data-icon] {
+    right: 8px;
+}

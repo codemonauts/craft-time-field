@@ -1,0 +1,44 @@
+{
+  "name": "codemonauts/craft-time-field",
+  "description": "Craft CMS plugin to add a simple, time field.",
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "field",
+    "time"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "codemonauts",
+      "homepage": "https://codemonauts.com"
+    }
+  ],
+  "support": {
+    "source": "https://github.com/codemonauts/craft-time-field",
+    "docs": "https://github.com/codemonauts/craft-time-field/blob/master/README.md",
+    "issues": "https://github.com/codemonauts/craft-time-field/issues"
+  },
+  "require": {
+    "craftcms/cms": "^3.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "codemonauts\\timefield\\": "src/"
+    }
+  },
+  "extra": {
+    "handle": "timefield",
+    "class": "codemonauts\\timefield\\TimeField",
+    "name": "Simple Time Field",
+    "description": "Simple time field.",
+    "changelogUrl": "https://github.com/codemonauts/craft-time-field/blob/master/CHANGELOG.md",
+    "documentationUrl": "https://github.com/codemonauts/craft-time-field/blob/master/README.md",
+    "hasCpSection": false,
+    "hasSettings": false
+  }
+}

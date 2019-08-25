@@ -1,0 +1,36 @@
+$hue: 212
+$lightTextColor: hsl($hue, 10%, 75%)
+
+@mixin left($left)
+  body.ltr &
+    left: $left
+
+  body.rtl &
+    right: $left
+
+.timefield
+  width: 8.5em
+  display: inline-block
+  position: relative
+  background: #fff
+
+  .text
+    position: relative
+    z-index: 1
+    width: 100%
+    background: transparent
+
+    &:before
+      top: calc(50% - 5px)
+      @include left(7px)
+      font-size: 11px
+      color: transparent
+      content: 'time'
+
+  div[data-icon]
+    display: block
+    position: absolute
+    top: calc(50% - 10px)
+    @include left(8px)
+    z-index: 0
+    color: $lightTextColor
