@@ -2,7 +2,7 @@
 
 namespace codemonauts\timefield;
 
-use \craft\base\Plugin;
+use craft\base\Plugin;
 use craft\events\RegisterComponentTypesEvent;
 use craft\services\Fields;
 use yii\base\Event;

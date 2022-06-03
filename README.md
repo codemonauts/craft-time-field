@@ -1,4 +1,4 @@
-# Simple Time Field for Craft CMS 3.x
+# Simple Time Field for Craft CMS
 
 ![Icon](resources/timefield.png)
 
@@ -10,7 +10,7 @@ Sometimes you need a field in the control panel that allows you to enter time wi
 
 ## Requirements
 
- * Craft CMS >= 3.0.0
+ * Craft CMS >= 4.0.0
 
 ## Installation
 
@@ -19,11 +19,10 @@ Open your terminal and go to your Craft project:
 ``` shell
 cd /path/to/project
 composer require codemonauts/craft-time-field
-./craft install/plugin timefield
 ```
 
 ## Usage
 
-After installation, the control panel can be used to create fields for time. 
+After installation, the control panel can be used to create simple time fields. 
 
 With ❤ by [codemonauts](https://codemonauts.com)
